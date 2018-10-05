@@ -1,0 +1,114 @@
+ant:
+<ant>
+  <mkdir dir="C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_redistribution" />
+  <mkdir dir="C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_testing" />
+  <mkdir dir="C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_redistribution_files_only" />
+</ant>
+mcc -C -o LPR_1 -W WinMain:LPR_1 -T link:exe -d C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_testing -v C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1.m -a C:\Users\Lu\Desktop\LPR_1\LPR_1\FindLicensePlant.m -a C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR.m -a C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1.fig -a C:\Users\Lu\Desktop\LPR_1\LPR_1\RGBtoGray.m -a C:\Users\Lu\Desktop\LPR_1\LPR_1\Sobel.m 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+Begin validation of MEX files: Thu Feb 08 01:33:35 2018
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwbwpackc.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwbwpackctbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwbwunpackc.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwbwunpackctbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwcannythresholding_tbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwedgethinning_tbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwgrayto16.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwgrayto8.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwimreconstruct.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwint16touint16.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwipp.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwippBinder.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwippfilter.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwippgeotrans.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwippmedianfilter.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwippreconstruct.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwiptutil.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwmorphop_binary_tbb.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwmorphop_ipp.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwmorphop_packed.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwneighborhood.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwnhood.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwtbbhist.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\Program Files\MATLAB\R2015a\bin\win32\libmwuint16toint16.dll'.
+No conflicting MATLAB file found.
+End validation of MEX files: Thu Feb 08 01:33:35 2018
+[Warning: Adding path "C:\Users\Lu\Desktop\LPR_1\LPR_1" to Compiler path
+instance.] 
+Parsing file "C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 41 temporary MEX authorization files.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7426144_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b748403_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7414087_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7431603_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7419274_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7411745_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7421367_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7428571_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7421930_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b744215_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b74975_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7415993_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b744244_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b744969_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7424878_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7428681_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7410794_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b746689_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7414300_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7431672_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7426412_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b745419_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7414792_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b74272_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7411256_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7411123_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7413566_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7420760_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b748331_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b747457_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b749212_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b748513_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b747396_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b745340_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7423744_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7425695_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b749102_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7418446_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7418389_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b741629_2932.auth'.
+Removing: 'C:\Users\Lu\AppData\Local\Temp\mathworks_tmp_00b7416408_2932.auth'.
+Generating file "C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_testing\readme.txt".
+Packaging...
+Adding custom icon C:\Program Files\MATLAB\R2015a\toolbox\compiler\Resources\default_icon.ico to C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_testing\LPR_1.exe.
+Attempting to embed the CTF archive into the application C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_testing\LPR_1.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at C:\Users\Lu\Desktop\LPR_1\LPR_1\LPR_1\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 8 minutes and 6 seconds.
