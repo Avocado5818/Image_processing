@@ -1,0 +1,47 @@
+function out=MotionBlur(image,theta)
+   
+    H1=fspecial('motion',5,theta);
+    H2=fspecial('motion',10,theta);
+    H3=fspecial('motion',15,theta);
+    H4=fspecial('motion',20,theta);
+    H5=fspecial('motion',25,theta);
+    H6=fspecial('motion',30,theta);
+    H7=fspecial('motion',35,theta);
+    H8=fspecial('motion',40,theta);
+    H9=fspecial('motion',45,theta);
+    H10=fspecial('motion',50,theta);
+    M1=myft(H1,image,'same');
+    M2=myft(H2,image,'same');
+    M3=myft(H3,image,'same');
+    M4=myft(H4,image,'same');
+    M5=myft(H5,image,'same');
+    M6=myft(H6,image,'same');
+    M7=myft(H7,image,'same');
+    M8=myft(H8,image,'same');
+    M9=myft(H9,image,'same');
+    M10=myft(H10,image,'same');
+    F0=FourierTransform(image);
+    F1=FourierTransform(M1);
+    F2=FourierTransform(M2);
+    F3=FourierTransform(M3);
+    F4=FourierTransform(M4);
+    F5=FourierTransform(M5);
+    F6=FourierTransform(M6);
+    F7=FourierTransform(M7);
+    F8=FourierTransform(M8);
+    F9=FourierTransform(M9);
+    F10=FourierTransform(M10);
+    FM0=FMfunction(F0);
+    FM1=FMfunction(F1);
+    FM2=FMfunction(F2);
+    FM3=FMfunction(F3);
+    FM4=FMfunction(F4);
+    FM5=FMfunction(F5);
+    FM6=FMfunction(F6);
+    FM7=FMfunction(F7);
+    FM8=FMfunction(F8);
+    FM9=FMfunction(F9);
+    FM10=FMfunction(F10);
+    %==========================================================
+out=[FM0,FM1,FM2,FM3,FM4,FM5,FM6,FM7,FM8,FM9,FM10];
+end

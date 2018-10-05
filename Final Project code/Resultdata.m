@@ -1,0 +1,42 @@
+function out=Resultdata(image)
+    image=double(image);
+    %====================================================
+    G1=image;
+    G2=imgaussfilt(image,0.4);
+    G3=imgaussfilt(image,0.8);
+    G4=imgaussfilt(image,1.2);
+    G5=imgaussfilt(image,1.6);
+    G6=imgaussfilt(image,2.0);
+    G7=imgaussfilt(image,2.4);
+    G8=imgaussfilt(image,2.8);
+    G9=imgaussfilt(image,3.2);
+    G10=imgaussfilt(image,3.6);
+    G11=imgaussfilt(image,4.0);
+    %=============== Fourier Transform image ===============
+    F1=FourierTransform(G1);
+    F2=FourierTransform(G2);
+    F3=FourierTransform(G3);
+    F4=FourierTransform(G4);
+    F5=FourierTransform(G5);
+    F6=FourierTransform(G6);
+    F7=FourierTransform(G7);
+    F8=FourierTransform(G8);
+    F9=FourierTransform(G9);
+    F10=FourierTransform(G10);
+    F11=FourierTransform(G11);
+    %========================================================
+    FM1=FMfunction(F1);
+    FM2=FMfunction(F2);
+    FM3=FMfunction(F3);
+    FM4=FMfunction(F4);
+    FM5=FMfunction(F5);
+    FM6=FMfunction(F6);
+    FM7=FMfunction(F7);
+    FM8=FMfunction(F8);
+    FM9=FMfunction(F9);
+    FM10=FMfunction(F10);
+    FM11=FMfunction(F11);
+    %==========================================================
+out=[FM1,FM2,FM3,FM4,FM5,FM6,FM7,FM8,FM9,FM10,FM11];
+
+end 
